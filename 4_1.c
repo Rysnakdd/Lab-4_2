@@ -3,27 +3,27 @@
 #include <locale.h>
 int main()
 {
-	setlocale(LC_CTYPE, "ukr");
+	setlocale(LC_CTYPE, "ua");
 	double f;
 	int end, x, y;
-
+	
 	do
-	{
+{
 		end = 0;
 
-		printf("Задайте x = ");
+		printf("Р—Р°РґР°Р№С‚Рµ x = ");
 		scanf_s("%d", &x);
-		printf("Задайте y = ");
+		printf("Р—Р°РґР°Р№С‚Рµ y = ");
 		scanf_s("%d", &y);
 		f = (x * x + y * y) / (sqrt(x - y));
-		if (sqrt(x - y) <= 0)
+		if (sqrt(x - y) = 0)
 		{
-			printf("Помилка.Вiдбувається дiлення на 0, задайте iншi числа\n");
+			printf("РџРѕРјРёР»РєР°.Р’iРґР±СѓРІР°С”С‚СЊСЃСЏ РґiР»РµРЅРЅСЏ РЅР° 0, Р·Р°РґР°Р№С‚Рµ iРЅС€i С‡РёСЃР»Р°\n");
 			end = 1;
 		}
-		else if (x < y)
+		else if(x<y)
 		{
-			printf("Помилка.Корінь iз вiдємного числа, задайте iншi числа\n");
+			printf("РџРѕРјРёР»РєР°.РљРѕСЂiРЅСЊ iР· РІiРґС”РјРЅРѕРіРѕ С‡РёСЃР»Р°, Р·Р°РґР°Р№С‚Рµ iРЅС€i С‡РёСЃР»Р°\n");
 			end = 1;
 		}
 
@@ -32,7 +32,7 @@ int main()
 
 	} while (end == 1);
 
-	printf("f= %g\n", f);
+	printf("f= %g\n",f);
 
 	return 0;
 }
