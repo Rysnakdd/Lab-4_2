@@ -3,7 +3,7 @@
 #include <locale.h>
 int main()
 {
-	setlocale(LC_CTYPE, "ukr");
+	setlocale(LC_CTYPE, "ua");
 	double f;
 	int end, x, y;
 
@@ -11,19 +11,19 @@ int main()
 	{
 		end = 0;
 
-		printf("Задайте x = ");
+		printf("Г‡Г Г¤Г Г©ГІГҐ x = ");
 		scanf("%d", &x);
-		printf("Задайте y = ");
+		printf("Г‡Г Г¤Г Г©ГІГҐ y = ");
 		scanf("%d", &y);
 		f = (x * x + y * y) / (sqrt(x - y));
 		if (sqrt(x - y) <= 0)
 		{
-			printf("Помилка.Вiдбувається дiлення на 0, задайте iншi числа\n");
+			printf("ГЏГ®Г¬ГЁГ«ГЄГ .Г‚iГ¤ГЎГіГўГ ВєГІГјГ±Гї Г¤iГ«ГҐГ­Г­Гї Г­Г  0, Г§Г Г¤Г Г©ГІГҐ iГ­Гёi Г·ГЁГ±Г«Г \n");
 			end = 1;
 		}
 		else if (x < y)
 		{
-			printf("Помилка.Корінь iз вiдємного числа, задайте iншi числа\n");
+			printf("ГЏГ®Г¬ГЁГ«ГЄГ .ГЉГ®Г°ВіГ­Гј iГ§ ГўiГ¤ВєГ¬Г­Г®ГЈГ® Г·ГЁГ±Г«Г , Г§Г Г¤Г Г©ГІГҐ iГ­Гёi Г·ГЁГ±Г«Г \n");
 			end = 1;
 		}
 
